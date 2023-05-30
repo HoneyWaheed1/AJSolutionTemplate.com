@@ -1,0 +1,1 @@
+# AJSolutionTemplate.com
