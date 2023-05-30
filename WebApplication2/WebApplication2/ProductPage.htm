@@ -1,0 +1,1026 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>Product Page</title>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="Stylesheet" href="css/bootstrap.css" />
+        <link type="text/css" rel="Stylesheet" href="Style.css.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<style>
+.maincont
+{
+    width:75%;
+}
+.iconlinks
+{
+    display:block;
+}
+.cartbtnmobile
+{
+   display:none;
+}
+    .prodcontainer
+    {
+        text-align:center;
+    }
+                
+.parallelogram {
+  width: 50px;
+  height: 50px;
+  background: #32557f;
+  transform: skew(-16deg);
+}
+   .ahr:hover
+{
+  box-shadow: 0 4px 8px 0 rgb(87, 87, 87), 0 6px 20px 0 rgb(87, 87, 87);
+}
+    .dropdown-content a:hover 
+    {
+        background-color: black; 
+        }
+    .dropdown:hover .dropdown-content 
+{
+    display: block;
+    margin-left:0%;
+    background-color:#042331;                                   
+}
+
+
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top:;
+  left: 0;
+  background-color: #7a1619;
+  overflow-x:hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+
+@media(max-width:555px)
+{
+  
+
+.cartbtn
+{
+    display:none;
+}
+.iconlinks
+{
+    display:none;
+}
+.cartbtnmobile
+{
+   display:flex;
+}
+}
+
+.red
+{
+    color:Red;
+}
+
+
+
+
+/*-------------------------------------------------Carousel--------------------------------------------------------------------*/
+ :root {
+  --white: #fff;
+  --red: #e74c3c;
+  --black: #000;
+  --img-color: #ededed;
+  --overlay: rgba(0, 0, 0, 0.75);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+
+  max-width: 100%;
+  height: auto;
+background-color: var(--img-color);
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="radio"] {
+  position: relative;
+  bottom: 0;
+  left: -9999px;
+}
+
+.bodycolor {
+  color: var(--green);
+  margin: 20px 0;
+  font-family: sans-serif;
+}
+
+.containercarousel {
+  max-width: 450px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.featured-wrapper {
+  position: relative;
+}
+
+.featured-wrapper .featured-list {
+  display: grid;
+}
+
+.featured-wrapper .featured-list li {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.featured-wrapper .arrows label::before,
+.featured-wrapper .arrows label::after {
+
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--black);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-color: var(--white);
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+
+.featured-wrapper .arrows label::before {
+  left: 10px;
+}
+
+.featured-wrapper .arrows label::after {
+  right: 10px;
+}
+
+.featured-wrapper .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translatex(-50%);
+  display: flex;
+}
+
+.featured-wrapper .dots li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.featured-wrapper .dots label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  transition: background 0.25s;
+}
+
+.featured-wrapper .dots label:hover {
+  background: currentcolor;
+}
+
+.thumb-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  margin-top: 20px;
+}
+
+.thumb-list label {
+  display: grid;
+}
+
+.thumb-list img,
+.thumb-list .outer {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.thumb-list .outer {
+  display: grid;
+  place-items: center;
+  transition: background 0.25s;
+}
+
+.thumb-list .inner {
+  font-size: 18px;
+  opacity: 0;
+  transform: translatey(20px);
+  transition: all 0.25s;
+}
+
+/* mimic click event
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[id="image1"]:checked ~ .containercarousel .featured-list li:nth-child(1),
+[id="image2"]:checked ~ .containercarousel .featured-list li:nth-child(2),
+[id="image3"]:checked ~ .containercarousel .featured-list li:nth-child(3),
+[id^="image"]:checked ~ .containercarousel .arrows [for^="image"]:hover::before,
+[id^="image"]:checked ~ .containercarousel .arrows [for^="image"]:hover::after {
+  opacity: 1;
+}
+
+[id="image1"]:checked ~ .containercarousel .arrows [for="image3"]::before,
+[id="image2"]:checked ~ .containercarousel .arrows [for="image1"]::before,
+[id="image3"]:checked ~ .containercarousel .arrows [for="image2"]::before {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-prev-slideshow.svg);
+}
+
+[id="image1"]:checked ~ .containercarousel .arrows [for="image2"]::after,
+[id="image2"]:checked ~ .containercarousel .arrows [for="image3"]::after,
+[id="image3"]:checked ~ .containercarousel .arrows [for="image1"]::after {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-next-slideshow.svg);
+}
+
+[id="image1"]:checked ~ .containercarousel .dots [for="image1"],
+[id="image2"]:checked ~ .containercarousel .dots [for="image2"],
+[id="image3"]:checked ~ .containercarousel .dots [for="image3"] {
+  background: currentcolor;
+}
+
+[id="image1"]:checked ~ .containercarousel [for="image1"] .outer,
+[id="image2"]:checked ~ .containercarousel [for="image2"] .outer,
+[id="image3"]:checked ~ .containercarousel [for="image3"] .outer {
+  background: var(--overlay);
+}
+
+[id="image1"]:checked ~ .containercarousel [for="image1"] .inner,
+[id="image2"]:checked ~ .containercarousel [for="image2"] .inner,
+[id="image3"]:checked ~ .containercarousel [for="image3"] .inner {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  color: var(--black);
+  text-align: right;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.page-footer span {
+  color: var(--red);
+}
+</style>
+
+<script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        /*
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";*/
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+
+    /*---------------------Text Change------------------------------*/
+
+
+    function mytextchange1() {
+        var x = document.getElementById("myDIV");
+
+        x.innerHTML = "Color Fmaily : White ";
+    }
+    function mytextchange2() {
+        var x = document.getElementById("myDIV");
+        x.innerHTML = "Color Fmaily : Red ";
+    }
+    function mytextchange3() {
+        var x = document.getElementById("myDIV");
+        x.innerHTML = "Color Fmaily : Green ";
+    }
+    function mytextchange4() {
+        var x = document.getElementById("myDIV");
+        x.innerHTML = "Color Fmaily : Blue ";
+    }
+    /*----------------------CHANGE COLOR---------------------------*/
+
+    function myFunction(x) {
+        x.classList.toggle("red");
+    }
+
+</script>
+  <!----------------------------------------------------------------------------------Scrolling Java Script---------------------------------------------------------------------------------->
+
+    <script>
+        /*------------Scroll Animation Java Scrit----------------*/
+        function reveal() {
+            var reveals = document.querySelectorAll(".revealleft");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+    <script>
+        /*------------Scroll Animation Java Scrit----------------*/
+        function reveal() {
+            var reveals = document.querySelectorAll(".revealup");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+            
+        <script>
+            /*------------Scroll Animation Java Scrit----------------*/
+            function reveal() {
+                var reveals = document.querySelectorAll(".revealright");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", reveal);
+    </script>
+</head>
+<body style="background-color:#eff0f5;">
+<div class="container-fluid" style="margin-bottom:11rem;" >
+<nav class=" navbar-expand-lg navbar-light  fixed-top" style="background-color:#2c2c2c;">
+<div class="row p-2" style="background-color:Black;">
+<div class="col-md-6 text-center mt-1">
+<span style="color:White; font-size:large;">Welcome to The <span style="color:#ea4b35; font-size:large;">Hit Pride Coorporation</span></span>
+</div>
+<div class="col-md-6 text-center">
+
+<div id="myDsIV">
+
+  <div class="input-group w-50">
+<input type="text" class="form-control searchbar form-control-sm w-50" placeholder="---Search Products---" />
+      <div class="input-group-append">
+        <span class="input-group-text"><i class="fa fa-search"></i></span>
+      </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<button class="navbar-toggler" style="float:right; margin-top:3rem;" data-toggle="collapse"class="ccc" onclick="openNav()">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="row p-2 pb-2 justify-content-center">
+<span>
+<img src="Hit-Pride-logo-png-1.png" class="navbar-brand " style=" margin-top:-3rem; margin-left:2rem; width:160px; height:150px; color:White;font-size:35px;font-weight:bold; background-color:transparent;" />
+</span>
+                <div class="col">
+                 <div class=" collapse navbar-collapse" id="mynav">
+                    <ol class="navbar-nav marginleft mt-4">
+                        <li class="nav-item"><a class="nav-link pr-4 navlinks active"  href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link pr-4 navlinks" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link pr-4 navlinks" href="#">Our Menu</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link pr-4 navlinks dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
+                        <div class="dropdown-menu dropdown-content" style="width:250px; background-color:#2c2c2c;">
+                                        <a class="dropdown-item text-white" style="font-size:larger;"  href="#">Soccer Uniform</a>
+                                        <a class="dropdown-item text-white" style="font-size:larger;" href="#">BaseBall Uniform</a>
+                                        <a class="dropdown-item text-white" style="font-size:larger;" href="#">SoftBall Uniform</a>
+                                        <a class="dropdown-item text-white" style="font-size:larger;" href="#">Hockey Uniform</a>
+                                        <a class="dropdown-item text-white" style="font-size:larger;" href="#">Vercity Jacket</a>
+                                        <a class="dropdown-item text-white" style="font-size:larger;"href="#">Lather Jacket</a>
+                                        </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link pr-4 navlinks" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link pr-4 navlinks"href="#">Our Services</a></li>
+                    </ol>
+                    </div>
+                </div>
+                 <ol class="nav mr-5 mt-4">
+                        <li class="nav-item"><a class="nav-link  iconlinks " onclick="myFunctionsearch()" href="#"><i class="fa fa-search" style="font-size:x-large"></i></a></li>
+                        <li class="nav-item"><a class="nav-link  iconlinks" href="#"><i class="fa fa-shopping-cart" style="font-size:xx-large"></i></a></li>
+                    </ol>
+            </div>
+
+<div id="mySidenav" class="sidenav ccc cc">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+ <ol class="navbar-nav " style="margin-top:-0.4%;margin-left:5.3%;background-color:#042331;" >
+<li class="nav-item ml-2 li"><a class="nav-link aa" style="text-decoration:none;cursor:pointer;color:white; font-size:17px;"><i class="fa fa-home"></i>&nbsp HOME</a></li>
+<li class="nav-item ml-2 dropdown li"><a class="nav-link aa dropdown-toggle " style="text-decoration:none;cursor:pointer;color:white;font-size:17px;"data-toggle="dropdown"><I class="fa fa-product-hunt"></I>&nbsp PRODUCTS</a>
+<div class="dropdown-menu bg-dark">
+<a class="dropdown-item text-white" style="font-size:small;" href="#">LAPTOPS</a>
+<a class="dropdown-item text-white"style="font-size:small;" href="#">LAPTOPS</a>
+<a class="dropdown-item text-white" style="font-size:small;" href="#">LAPTOPS</a>
+<a class="dropdown-item text-white" style="font-size:small;" href="#">LAPTOPS</a>
+<a class="dropdown-item text-white" style="font-size:small;"href="#">LAPTOPS</a>
+<a class="dropdown-item text-white" style="font-size:small;" href="#">LAPTOPS</a>
+</div>
+</li>
+<li class="nav-item ml-2 li"><a class="nav-link aa" style="text-decoration:none;cursor:pointer;color:white;font-size:17px;"><I class="fa fa-link"></I>&nbsp SHORTCUTS</a></li>
+<li class="nav-item ml-2 li"><a class="nav-link aa" style="text-decoration:none;cursor:pointer;color:white;font-size:17px;"><I class="fa fa-street-view"></I>&nbsp OVERVIEW </a></li>
+<li class="nav-item ml-2 li"><a class="nav-link aa" style="text-decoration:none;cursor:pointer;color:white;font-size:17px;"><I class="fa fa-calendar-check-o"></I>&nbsp EVENTS </a></li>
+<li class="nav-item ml-2 li"><a class="nav-link aa" style="text-decoration:none;cursor:pointer;color:white;font-size:17px;"><I class="fa fa-question-circle"></I>&nbsp ABOUT </a></li>
+<li class="nav-item ml-2 li"><a class="nav-link aa" style="text-decoration:none;cursor:pointer;color:white;font-size:17px;"><I class="fa fa-sliders"></I>&nbsp SERVICES </a></li>
+<li class="nav-item ml-2 li lii"><a class="nav-link aa" style="text-decoration:none;cursor:pointer;color:white;font-size:17px;"><I class="fa fa-envelope"></I>&nbsp CONTACT </a></li>
+</ol>
+</div>
+</nav>
+   </div>
+
+    <div class="container-fluid   maincont"  >
+                        <!---------------------------------------------Max WIDTH--------------------------------------------->
+   <div class="row" >
+   <div class="col-12 bg-white mt-5">
+  <div class="row">                                              <!------------------Carousel-------------------->
+   <div class="col-lg-4">
+   <input type="radio" id="image1" name="image" checked>
+<input type="radio" id="image2" name="image">
+<input type="radio" id="image3" name="image">
+
+<div class="containercarousel bodycolor">
+  <div class="featured-wrapper">
+    <ul class="featured-list">
+      <li>
+        <figure>
+          <img src="prod1.png" style="width:100%; height:350px;" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="prod2.jpg" style="width:100%; height:350px;" alt="">
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="prod3.png" style="width:100%; height:350px;" alt="">
+        </figure>
+      </li>
+    </ul>
+    <ul class="arrows">
+      <li>
+        <label for="image1"></label>
+      </li>
+      <li>
+        <label for="image2"></label>
+      </li>
+      <li>
+        <label for="image3"></label>
+      </li>
+    </ul>
+    <ul class="dots">
+      <li>
+        <label for="image1"></label>
+      </li>
+      <li>
+        <label for="image2"></label>
+      </li>
+      <li>
+        <label for="image3"></label>
+      </li>
+    </ul>
+  </div>
+  <ul class="thumb-list">
+    <li>
+      <label for="image1">
+        <img src="prod1.png"alt="">
+        <span class="outer">
+          <span class="inner">Caption1</span>
+        </span>
+      </label>
+    </li>
+    <li>
+      <label for="image2">
+        <img src="prod2.png" alt="">
+        <span class="outer">
+          <span class="inner">Caption2</span>
+        </span>
+      </label>
+    </li>
+    <li>
+      <label for="image3">
+        <img src="prod3.png"  alt="">
+        <span class="outer">
+          <span class="inner">Caption3</span>
+        </span>
+      </label>
+    </li>
+  </ul>
+</div>
+</div>
+
+            <!----------------------- Product Detail----------------------->
+
+               <div class="col-xl-5 productdetail mt-3" >
+                    <span style="font-size:xx-large; font-weight:bold; color:black;">Base Ball Uniform</span>
+                    <span style="font-size:large; font-weight:500 color:black;">SKU  :  <span style="font-size:large; font-weight:400 color:black;">SW-1601</span></span><br />
+                    <span style="font-size:large; font-weight:500 color:black;">Category  :  <span style="font-size:large; font-weight:400 color:black;">Uncategorized</span></span><br />
+                     <span style="font-size:large; font-weight:500 color:black;">Share with  : <i class="fa fa-facebook-square ml-3"></i><i class="fa fa-twitter-square ml-3"></i><i class="fa fa-instagram ml-3"></i></span><br />
+                     <div class="row mt-3">
+                            <div class="col-6">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o mr-2"></i><strong style="font-size:large;">124 Ratings </strong> 
+                            </div>
+                            <div class="col-6 text-right">
+                            <i class="fa fa-share-alt " style="font-size:22px;"></i><i style="font-size:22px;" onclick="myFunction(this)" class="fa fa-heart-o ml-3 mr-3"></i>
+                            </div>
+                    </div>
+
+                      
+
+                    <div class="row" style="margin-bottom:1%;">
+                            <div class="col-12">
+                            <strong style="font-size:xx-large;color:#f57224">Rs.  3000</strong>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col-12">
+                             <strong><del style="font-size:large;">Rs.4000</del></strong>
+                            </div>
+                    </div>
+                      
+             <div class="row">
+             <div class="col-sm-4"><strong style="font-size:larger;">Promotions :</strong></div>
+             <div class="col-8">
+             <a class="text-white" style="border:1px solid orange; background:#f57224; padding:6px; font-size:large; " >Buy 1 Get 1 Free</a>
+             </div>
+             
+             
+             </div>
+                    <hr />  
+    
+                    <div class="row">
+                            <div class="col-12">
+                            <small id="myDIV" style="font-size:large;">Color Fmaily : Select</small>
+                            </div>
+                    </div>
+
+                       <div class="row">
+                            <div class="col-12">                         
+                            <img onclick="mytextchange1()" src="prod1.png"  width="70px;" height="70px"/>
+                            <img onclick="mytextchange2()" src="prod2.png"height="70px" width="70px;" />
+                            <img onclick="mytextchange3()" src="prod3.png" width="70px;" height="70px" />
+                            <img onclick="mytextchange4()" src="prod4.png" width="70px;" height="70px"/>
+                            </div>
+                    </div> 
+                    <div class="row mt-3">
+                    <div class="col-4 text-right " style="font-size:x-large;">
+                    Quantity
+                    </div> 
+                    <div class="col-8 float-left  "> 
+                    <input type="number" min="1" max="5" style="width:100px;"  />                                  
+                   </div>
+                   </div>
+                   <div class="row mt-4 mb-5 cartbtn">
+                   <div class="col-6 text-right ">
+                  <button style="width:90%; color:White; font-weight:400; border:none; font-size:x-large; background-color:#2abbe8">Buy Now</button>
+                   </div>
+                    <div class="col-6 text-left ">
+                  <button style="width:90%; color:White; font-weight:400; border:none; font-size:x-large; background-color:#f57224">Add To Cart</button>
+                   </div>
+                   </div>
+
+
+                    <div class="row mt-4 cartbtnmobile pt-3 pl-3 pr-3 pb-0 fixed-bottom" style="background-color:#fafafa;">
+                   <div class="col-2">
+                   <i class="fa fa-shopping-bag text-black ml-2" style="font-size:large;"></i><br /><small style="font-size:large; margin-left:3%; color:black;">Store</small>
+                   </div>
+                   <div class="col-2" >
+                   <i class="fa fa-shopping-cart text-black ml-2" style="font-size:large;"></i><br /><small style="font-size:large; color:black;">Cart</small>
+                   </div> 
+                  <div class="col-8">
+                  <button class="parallelogram" style="width:45%; color:White; font-weight:400; border:none; font-size:large; background-color:#2abbe8">Buy Now</button><button class="parallelogram" style="width:55%; color:White; font-weight:400; border:none; font-size:large; background-color:#f57224">Add To Cart</button>
+                   </div>
+                   </div>
+                   </div>
+                   <!---------------------Third Column----------------------------->
+                   <div class="col-xl " style="background-color:#fafafa;">
+                   <div class="row mt-3">
+                   <div class="col-12">
+                   <small style="font-size:large;">Delivery</small>
+                   </div>
+                   </div>
+                   <div class="row pb-2 border-bottom mt-2" >
+                   <div class="col-2">
+                   <i class="fa fa-location-arrow" style="font-size:20px;"></i>&nbsp &nbsp 
+                   </div>
+                   <div class="col-10 ">
+                   <h6 style="font-size:17px;">Rang Pura Rari Chowk Street_No_2 Sialkot </h6>
+                   </div>
+                   </div>
+                   <div class="row mt-2 pt-2">
+                   <div class="col-2"><i class="fa fa-truck" style="font-size:20px;"></i>
+                   </div>
+                   <div class="col-10">
+                   <h6 style="font-size:17px;">Standard Delivery &nbsp &nbsp &nbsp<strong>Rs.120</strong><br /><small style="font-size:medium; color:Gray;">3-7 Days</small></h6>
+                   </div>
+                   </div>
+                   <div class="row pb-3 mt-2 border-bottom">
+                   <div class="col-2">
+                   <i class="fa fa-money" style="font-size:20px;"></i>
+                   </div>
+                   <div class="col-10">
+                   <h6 style="font-size:17px;">Cash On Delivery Available</h6>
+                   </div>
+                   </div>
+                   <div class="row">
+                   <div class="col-12">
+                   <small style="font-size:20px;">Services</small>
+                   </div>
+                   </div>
+                      <div class="row pb-3 mt-2 ">
+                   <div class="col-2">
+                   <i class="fa fa-repeat" style="font-size:20px;"></i>
+                   </div>
+                   <div class="col-10">
+                   <h6 style="font-size:17px;">7 Days Return<br /><small style="font-size:15px; color:gray">Change of mind is not applicable</small></h6>
+                   </div>
+                   </div>
+                       <div class="row pb-3 mt-2 border-bottom">
+                   <div class="col-2">
+                   <i class="fa fa-shield" style="font-size:20px;"></i>
+                   </div>
+                   <div class="col-10">
+                   <h6 style="font-size:17px;">Warrenty Not Available</h6>
+                   </div>
+                   </div>
+                   <div class="row pb-3 mt-2" style="border-top:10px solid white;">
+                   <div class="col-12">
+                   <small style="font-size:larger;">Sold By<br /><small class="ml-4">No Brand</small></small>
+                   </div>
+                   </div>
+                   <div class="row">
+                     <div class="col-6">
+                   <div class="row">
+                   <div class="col-12">Positive Seller Ratings</div>
+                   </div>
+                   <div class="row">
+                   <div class="col-12"><h3>92%</h3></div>
+                   </div>
+                   </div>
+                    <div class="col-6">
+                   <div class="row">
+                   <div class="col-12" >Ship On Time</div>
+                   </div>
+                   <div class="row">
+                   <div class="col-12"><h3 >100%</h3></div></div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+                   <div class="container-fluid maincont mt-4">
+                   <div class="row">
+                   <div class="col-lg-12 text-center">
+                   <div class="p-3" style="text-decoration:underline; font-size:x-large; font-weight:700;">Reviews </div>
+                   </div>
+                   </div>
+                   <div class="row" style="border:2px solid black;">
+                   <div class="col-12 mt-5 mb-3 p-5">
+                   <div class="row">
+                   <div class="col-lg-6 revealup  text-white" style="font-size:larger; font-weight:600;">
+                   <div class=" bg-info p-3">
+                   There Is No Review Yet
+                   </div>
+                   </div>
+                   <div class="col-lg-6 revealleft ">
+                  <div class="row">
+                  <div class="col-lg-12 p-1" style="font-size:large; font-weight:400;">
+                  Your Email Address Will Not Be Published. Required Fields Are Marked *
+                  </div>
+                  <div class="col-lg-12" style="font-size:large; font-weight:400;">
+                  Your Ratings<br /> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i> <i class="fa fa-star" ></i>
+                  </div>
+                    <div class="col-lg-12 mt-2" style="font-size:large; font-weight:400;">
+                        Your Review<br />
+                        <textarea style="width:80%; height:200px;" class="mt-2"></textarea>
+                  </div>
+                    <div class="col-lg-12 mt-3" style="font-size:large; font-weight:400;">         
+                    <div class="row">
+                    <div class="col-lg-6">
+                    <label>Name :</label>
+                        <input type="text" class="form-control form-control-lg" style="font-size:medium;" placeholder="Enter Your Name"/>
+                    </div>
+                     <div class="col-lg-6">
+                    <label>Email :</label>
+                        <input type="text" class="form-control form-control-lg" style="font-size:medium;" placeholder="Enter Your Email Address" />
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 mt-3">
+                  <label><input type="checkbox" />    Save my name, email, and website in this browser for <br />the next time I comment.</label>
+                  </div>
+                  <div class="col-lg-12 text-center mt-4">
+                  <button style="font-size:larger; font-weight:600; width:250px; background-color:#2c2c2c; color:White;" class="pt-1 pb-1 pl-3 pr-3">Submit</button>
+                  </div> 
+                  </div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+
+                   <div class="container mt-5">
+                  <div class="col-lg-12 text-center revealright">
+                   <div class="p-3" style="text-decoration:underline; font-size:x-large; font-weight:700;">Related Products </div>
+                   </div>
+    <div class="row revealleft">
+    <div class="col-12">
+    <div class="row">
+    <div class="col-lg-6">
+    <div class="row">
+    <div class="col-6">
+    <div class="card">
+            <div class="box">
+                <img src="prod1.png" style="background-color:#c3bebe; class="card-img-top" />
+                 <ul class="icon">
+                    <li><a href="#" class="text-decoration-none"><small>Quick View</small></a></li>
+                    
+                </ul>
+                <div class="box-content">
+                    <h3 class="title">Product Image</h3>
+                    <span class="post">SoftBall Uniform</span>
+                </div>
+                   <div class="card-body " style="background-color:#13304d;" >
+            <div class="card-title" style="font-size:larger; font-weight:bold;" >
+            Product Image
+            </div>
+            </div>
+            </div>
+         
+   
+    </div>
+    </div>
+    <div class="col-6">
+    <div class="card">
+            <div class="box">
+                <img src="prod2.png" style="background-color:#c3bebe; class="card-img-top" />
+                 <ul class="icon">
+                    <li><a href="#" class="text-decoration-none"><small>Quick View</small></a></li>
+                    
+                </ul>
+                <div class="box-content">
+                    <h3 class="title">Product Image</h3>
+                    <span class="post">BaseBall Uniform</span>
+                </div>
+                   <div class="card-body " style="background-color:#13304d;" >
+            <div class="card-title" style="font-size:larger; font-weight:bold;" >
+            Product Image
+            </div>
+            </div>
+            </div>
+         
+   
+    </div>
+    </div>
+    </div>    
+    </div>
+    <div class="col-lg-6">
+    <div class="row">
+    <div class="col-6">
+    <div class="card">
+            <div class="box">
+                <img src="prod3.png" style="background-color:#c3bebe; class="card-img-top" />
+                 <ul class="icon">
+                    <li><a href="#" class="text-decoration-none"><small>Quick View</small></a></li>
+                    
+                </ul>
+                <div class="box-content">
+                    <h3 class="title">Product Image</h3>
+                    <span class="post">Hockey Uniform</span>
+                </div>
+                   <div class="card-body " style="background-color:#13304d;" >
+            <div class="card-title" style="font-size:larger; font-weight:bold;" >
+            Product Image
+            </div>
+            </div>
+            </div>
+         
+   
+    </div>
+    </div>
+    <div class="col-6">
+    <div class="card">
+            <div class="box">
+                <img src="prod4.png" style="background-color:#c3bebe; class="card-img-top" />
+                 <ul class="icon">
+                    <li><a href="#" class="text-decoration-none"><small>Quick View</small></a></li>
+                    
+                </ul>
+                <div class="box-content">
+                    <h3 class="title">Product Image</h3>
+                    <span class="post">Varsity Jacket</span>
+                </div>
+                   <div class="card-body " style="background-color:#13304d;" >
+            <div class="card-title" style="font-size:larger; font-weight:bold;" >
+            Product Image
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>    
+            </div>
+            </div>
+            </div>
+            </div>
+             </div>
+    
+   
+
+
+
+<div class="container-fluid mt-5" style="background-color:#2c2c2c;">
+    <div class="row">
+    <div class="col-12 mt-5 mb-5">
+    <div class="row">
+    <div class="col-lg-4 text-center revealleft mt-5">
+    <div class="row">
+    <div class="col-12 mt-4">
+    <strong style="font-size:x-large; color:#e94b35;">Contact</strong>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <span style="font-size:larger; color:white;">5 Rue Dalou, 75015 Paris</span>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <span ><a href="tel:+92 333-8656773" style="font-size:large; font-weight:600; color:#e94b35;">+92 333-8656773</a></span>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <span><a href="mailto:AJ_Solutions@gmail.com" style="font-size:larger; font-weight:bold; color:#e94b35;">AJ_Solutions@gmail.com</a></span>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 revealup text-center mt-5">
+    <div class="row">
+    <div class="col-12 text-center mt-4 mb-3">
+    <strong style="font-size:x-large; color:White;">Join our mailing list for updates,<br />Get news & offers events.</strong>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12 input-group">
+        <input id="Text1" class="form-control form-control-lg" type="text" />
+        <button class="input-group-text" style=" font-size:larger; background-color:black; color:White; border-radius:0px;">Subscribe</button>
+    </div>
+    </div>
+
+    </div>
+    <div class="col-lg-4 revealleft text-center mt-5">
+    <div class="row">
+    <div class="col-12 mt-4">
+    <strong style="font-size:x-large; color:#e94b35;">WORKING HOURS</strong>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <strong style="font-size:larger; color:#e94b35;">Mon – Fri :&nbsp &nbsp</strong><span style="font-size:large; color:White;">7.00am – 6.00pm</span>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <strong style="font-size:larger; color:#e94b35;">Sat : &nbsp &nbsp </strong><span style="font-size:large; color:White;"> 7.00am – 6.00pm</span>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <strong style="font-size:larger; color:#e94b35;"> Sun : &nbsp &nbsp </strong><span style="font-size:large; color:White;">8.00am – 6.00pm</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row border-top">
+    <div class="col-12  mb-4 text-center">
+   <div class="row">
+   <div class="col-lg-8 mt-5">
+    <strong style="font-size:larger; color:#e94b35">Design And Developed By : </strong>
+    <span style="font-size:large; color:White; font-weight:bold;">AJ Solutions</span>
+   </div>
+   <div class="col-lg-4 mt-5 text-left">
+   <strong style="font-size:larger; color:#e94b35"> Contact No :</strong>
+   <span style="font-size:large; color:White; font-weight:bold;">+92 333-8656773</span>
+   </div>
+   </div>
+    </div>
+    </div>
+    </div>
+
+
+
+                      <script>
+                          function myFunctionsearch() {
+                              var x = document.getElementById("myDsIV");
+                              if (x.style.display === "none") {
+                                  x.style.display = "block";
+                              } else {
+                                  x.style.display = "none";
+                              }
+                          }
+</script>     
+
+</body>
+</html>
